@@ -1,0 +1,41 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended" // Adding TypeScript support
+  ],
+  "env": {
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "plugins": [
+    "prettier",
+    "@typescript-eslint" // Adding TypeScript support
+  ],
+  "parser": "@typescript-eslint/parser", // Adding TypeScript support
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["./tsconfig.json"] // Ensuring TypeScript settings are respected
+  },
+  "rules": {
+    // "prettier/prettier": [
+    //   "error",
+    //   {
+    //     "endOfLine": "auto"
+    //   }
+    // ],
+    // "spaced-comment": "off",
+    // "no-console": "warn",
+    // "consistent-return": "off",
+    // "func-names": "off",
+    // "object-shorthand": "off",
+    // "no-process-exit": "off",
+    // "no-param-reassign": "off",
+    // "no-return-await": "off",
+    // "no-underscore-dangle": "off",
+    // "class-methods-use-this": "off",
+    // "prefer-destructuring": ["error", { "object": true, "array": false }],
+    // "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }] // Correcting the option name
+  }
+}
